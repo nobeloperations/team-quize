@@ -1,58 +1,76 @@
-.app-container {
-  min-height: 100vh;
-  transition: all 0.3s ease;
+:root {
+  --primary-color: #4CAF50;
+  --primary-hover: #45a049;
+  --secondary-color: #2196F3;
+  --secondary-hover: #1976D2;
+  --bg-light: #ffffff;
+  --bg-dark: #121212;
+  --text-light: #333333;
+  --text-dark: #ffffff;
 }
 
-.app-container.dark {
-  background-color: #1D2A35;
-  color: #8CA6C0;
+.app-container {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 72px; /* Height of navbar */
 }
 
 .app-container.light {
-  background-color: #8CA6C0;
-  color: #1D2A35;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.app-container.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   position: relative;
+  padding-top: 1rem;
 }
 
 .theme-toggle {
   position: absolute;
-  top: 2rem;
+  top: 0.75rem;
   right: 2rem;
-  padding: 0.8rem;
-  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
   border: none;
+  color: inherit;
+  font-size: 1.2rem;
   cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 1010;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  font-size: 1.2rem;
-}
-
-.dark .theme-toggle {
-  background-color: #1D2A35;
-  color: #ffffff;
-}
-
-.light .theme-toggle {
-  background-color: #ffffff;
-  color: #1D2A35;
 }
 
 .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
   transform: rotate(15deg);
 }
 
+.theme-toggle:focus-visible {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
 h1 {
-  text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  text-align: center;
+  margin: 1rem 0 1rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .intro-text {
@@ -60,21 +78,49 @@ h1 {
   max-width: 600px;
   margin: 0 auto 3rem;
   line-height: 1.6;
+  font-size: 1.1rem;
   opacity: 0.9;
 }
 
+.progress-bar {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .navbar {
+    background: rgba(18, 18, 18, 0.95);
+  }
+  
+  .app-container.light .navbar {
+    background: rgba(255, 255, 255, 0.95);
+  }
+}
+
 @media (max-width: 768px) {
+  .app-container {
+    padding-top: 60px; /* Adjusted for smaller navbar height on mobile */
+  }
+
   .content-wrapper {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: auto;
+    bottom: 1rem;
+    right: 1rem;
   }
 
   h1 {
     font-size: 2rem;
-    margin-top: 3rem;
+    margin: 1.5rem 0 0.8rem;
   }
 
-  .theme-toggle {
-    top: 1rem;
-    right: 1rem;
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
   }
 }

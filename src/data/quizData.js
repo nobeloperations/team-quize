@@ -165,48 +165,48 @@ export const questions = [
     question: "What type of impact would you like to make at Nobel?",
     options: [
       {
-        text: "Helping others grow and develop",
+        text: "Helping others grow and develop their potential",
         teamScores: [
-          { teamIndex: 1, value: 3 }, // Internship Program
           { teamIndex: 11, value: 3 }, // Coaching
-          { teamIndex: 13, value: 2 } // NVC
+          { teamIndex: 13, value: 3 }, // NVC
+          { teamIndex: 8, value: 2 }   // EduQuest
         ]
       },
       {
-        text: "Building and connecting communities",
+        text: "Building and connecting global communities",
         teamScores: [
-          { teamIndex: 3, value: 3 }, // Community Engagement
+          { teamIndex: 3, value: 3 },  // Community Engagement
           { teamIndex: 10, value: 3 }, // Networking
-          { teamIndex: 0, value: 2 } // Global Promo
+          { teamIndex: 0, value: 2 }   // Global Promo
         ]
       },
       {
-        text: "Creating and innovating",
+        text: "Innovating and improving processes",
         teamScores: [
           { teamIndex: 5, value: 3 }, // Automation
-          { teamIndex: 6, value: 3 }, // Marketing
-          { teamIndex: 7, value: 2 } // Course Design
+          { teamIndex: 4, value: 3 }, // Operations
+          { teamIndex: 1, value: 2 }  // Internship Program
         ]
       },
       {
-        text: "Improving processes and efficiency",
+        text: "Creating engaging content and experiences",
         teamScores: [
-          { teamIndex: 4, value: 3 }, // Operations
-          { teamIndex: 12, value: 3 }, // Finance
-          { teamIndex: 5, value: 2 } // Automation
+          { teamIndex: 6, value: 3 }, // Marketing
+          { teamIndex: 7, value: 3 }, // Course Design
+          { teamIndex: 2, value: 2 }  // MC Team
         ]
       }
     ]
   },
   {
-    question: "Which skills are you most excited to develop?",
+    question: "Which skills would you most like to develop?",
     options: [
       {
         text: "Leadership and public speaking",
         teamScores: [
           { teamIndex: 2, value: 3 }, // MC Team
           { teamIndex: 11, value: 2 }, // Coaching
-          { teamIndex: 3, value: 2 } // Community Engagement
+          { teamIndex: 3, value: 2 }  // Community Engagement
         ]
       },
       {
@@ -214,7 +214,7 @@ export const questions = [
         teamScores: [
           { teamIndex: 5, value: 3 }, // Automation
           { teamIndex: 12, value: 3 }, // Finance
-          { teamIndex: 4, value: 2 } // Operations
+          { teamIndex: 4, value: 2 }  // Operations
         ]
       },
       {
@@ -222,7 +222,7 @@ export const questions = [
         teamScores: [
           { teamIndex: 6, value: 3 }, // Marketing
           { teamIndex: 7, value: 3 }, // Course Design
-          { teamIndex: 0, value: 2 } // Global Promo
+          { teamIndex: 0, value: 2 }  // Global Promo
         ]
       },
       {
@@ -230,20 +230,20 @@ export const questions = [
         teamScores: [
           { teamIndex: 13, value: 3 }, // NVC
           { teamIndex: 10, value: 3 }, // Networking
-          { teamIndex: 3, value: 2 } // Community Engagement
+          { teamIndex: 3, value: 2 }  // Community Engagement
         ]
       }
     ]
   },
   {
-    question: "What's your preferred work environment?",
+    question: "What's your preferred work style?",
     options: [
       {
         text: "Dynamic and event-focused",
         teamScores: [
           { teamIndex: 2, value: 3 }, // MC Team
           { teamIndex: 8, value: 3 }, // EduQuest
-          { teamIndex: 3, value: 2 } // Community Engagement
+          { teamIndex: 3, value: 2 }  // Community Engagement
         ]
       },
       {
@@ -251,7 +251,7 @@ export const questions = [
         teamScores: [
           { teamIndex: 4, value: 3 }, // Operations
           { teamIndex: 12, value: 3 }, // Finance
-          { teamIndex: 7, value: 2 } // Course Design
+          { teamIndex: 7, value: 2 }  // Course Design
         ]
       },
       {
@@ -259,7 +259,7 @@ export const questions = [
         teamScores: [
           { teamIndex: 6, value: 3 }, // Marketing
           { teamIndex: 0, value: 3 }, // Global Promo
-          { teamIndex: 7, value: 2 } // Course Design
+          { teamIndex: 7, value: 2 }  // Course Design
         ]
       },
       {
@@ -267,24 +267,24 @@ export const questions = [
         teamScores: [
           { teamIndex: 5, value: 3 }, // Automation
           { teamIndex: 9, value: 3 }, // Nobel Reach
-          { teamIndex: 1, value: 2 } // Internship Program
+          { teamIndex: 1, value: 2 }  // Internship Program
         ]
       }
     ]
   },
   {
-    question: "Which type of projects interest you most?",
+    question: "What kind of tasks energize you most?",
     options: [
       {
-        text: "Educational and training initiatives",
+        text: "Training and mentoring others",
         teamScores: [
-          { teamIndex: 7, value: 3 }, // Course Design
-          { teamIndex: 8, value: 3 }, // EduQuest
-          { teamIndex: 13, value: 2 } // NVC
+          { teamIndex: 11, value: 3 }, // Coaching
+          { teamIndex: 8, value: 3 },  // EduQuest
+          { teamIndex: 13, value: 2 }  // NVC
         ]
       },
       {
-        text: "Technical and automation projects",
+        text: "Solving technical challenges",
         teamScores: [
           { teamIndex: 5, value: 3 }, // Automation
           { teamIndex: 4, value: 2 }, // Operations
@@ -292,7 +292,7 @@ export const questions = [
         ]
       },
       {
-        text: "Community and event management",
+        text: "Organizing events and building community",
         teamScores: [
           { teamIndex: 3, value: 3 }, // Community Engagement
           { teamIndex: 2, value: 3 }, // MC Team
@@ -300,48 +300,122 @@ export const questions = [
         ]
       },
       {
-        text: "Strategy and business development",
+        text: "Strategic planning and analysis",
         teamScores: [
           { teamIndex: 0, value: 3 }, // Global Promo
           { teamIndex: 12, value: 3 }, // Finance
-          { teamIndex: 1, value: 2 } // Internship Program
+          { teamIndex: 1, value: 2 }  // Internship Program
         ]
       }
     ]
   },
   {
-    question: "What's your approach to problem-solving?",
+    question: "What's your approach to learning and growth?",
     options: [
       {
-        text: "Analytical and data-driven",
+        text: "Through hands-on practice and experience",
         teamScores: [
-          { teamIndex: 12, value: 3 }, // Finance
-          { teamIndex: 5, value: 3 }, // Automation
-          { teamIndex: 4, value: 2 } // Operations
-        ]
-      },
-      {
-        text: "Creative and innovative",
-        teamScores: [
+          { teamIndex: 2, value: 3 }, // MC Team
           { teamIndex: 6, value: 3 }, // Marketing
-          { teamIndex: 0, value: 3 }, // Global Promo
-          { teamIndex: 7, value: 2 } // Course Design
+          { teamIndex: 5, value: 2 }  // Automation
         ]
       },
       {
-        text: "Collaborative and people-oriented",
+        text: "By studying and analyzing systems",
+        teamScores: [
+          { teamIndex: 4, value: 3 }, // Operations
+          { teamIndex: 12, value: 3 }, // Finance
+          { teamIndex: 7, value: 2 }  // Course Design
+        ]
+      },
+      {
+        text: "Through collaboration and feedback",
         teamScores: [
           { teamIndex: 11, value: 3 }, // Coaching
           { teamIndex: 13, value: 3 }, // NVC
-          { teamIndex: 3, value: 2 } // Community Engagement
+          { teamIndex: 3, value: 2 }   // Community Engagement
         ]
       },
       {
-        text: "Strategic and methodical",
+        text: "By taking on challenging projects",
         teamScores: [
           { teamIndex: 1, value: 3 }, // Internship Program
           { teamIndex: 9, value: 3 }, // Nobel Reach
-          { teamIndex: 4, value: 2 } // Operations
+          { teamIndex: 5, value: 2 }  // Automation
+        ]
+      }
+    ]
+  },
+  {
+    question: "What interests you most about Nobel's mission?",
+    options: [
+      {
+        text: "Building global educational opportunities",
+        teamScores: [
+          { teamIndex: 7, value: 3 }, // Course Design
+          { teamIndex: 8, value: 3 }, // EduQuest
+          { teamIndex: 0, value: 2 }  // Global Promo
+        ]
+      },
+      {
+        text: "Supporting and empowering others",
+        teamScores: [
+          { teamIndex: 11, value: 3 }, // Coaching
+          { teamIndex: 13, value: 3 }, // NVC
+          { teamIndex: 10, value: 2 }  // Networking
+        ]
+      },
+      {
+        text: "Creating innovative solutions",
+        teamScores: [
+          { teamIndex: 5, value: 3 }, // Automation
+          { teamIndex: 6, value: 3 }, // Marketing
+          { teamIndex: 4, value: 2 }  // Operations
+        ]
+      },
+      {
+        text: "Making positive social impact",
+        teamScores: [
+          { teamIndex: 9, value: 3 }, // Nobel Reach
+          { teamIndex: 3, value: 3 }, // Community Engagement
+          { teamIndex: 2, value: 2 }  // MC Team
+        ]
+      }
+    ]
+  },
+  {
+    question: "Which tools or technologies interest you most?",
+    options: [
+      {
+        text: "Programming and automation tools",
+        teamScores: [
+          { teamIndex: 5, value: 3 }, // Automation
+          { teamIndex: 4, value: 2 }, // Operations
+          { teamIndex: 12, value: 2 } // Finance
+        ]
+      },
+      {
+        text: "Content creation and design software",
+        teamScores: [
+          { teamIndex: 6, value: 3 }, // Marketing
+          { teamIndex: 7, value: 3 }, // Course Design
+          { teamIndex: 0, value: 2 }  // Global Promo
+        ]
+      },
+      {
+        text: "Communication and collaboration platforms",
+        teamScores: [
+          { teamIndex: 3, value: 3 }, // Community Engagement
+          { teamIndex: 10, value: 3 }, // Networking
+          { teamIndex: 2, value: 2 }   // MC Team
+        ]
+      },
+      {
+        text: "Project management and analytics tools",
+        teamScores: [
+          { teamIndex: 1, value: 3 }, // Internship Program
+          { teamIndex: 12, value: 3 }, // Finance
+          { teamIndex: 9, value: 2 }   // Nobel Reach
         ]
       }
     ]

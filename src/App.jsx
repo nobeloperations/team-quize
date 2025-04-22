@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PersonalityQuiz from './component/PersonalityQuiz';
+import Navbar from './component/Navbar';
 import { useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import './styles/App.css';
@@ -9,15 +10,11 @@ function App() {
 
   return (
     <div className={`app-container ${isDarkMode ? 'dark' : 'light'}`}>
+      <Navbar 
+        isDarkMode={isDarkMode} 
+        onThemeToggle={() => setIsDarkMode(!isDarkMode)} 
+      />
       <div className="content-wrapper">
-        <button
-          onClick={() => setIsDarkMode(!isDarkMode)}
-          className="theme-toggle"
-          aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-        >
-          {isDarkMode ? <FaSun /> : <FaMoon />}
-        </button>
-
         <h1>Nobel Teams Assessment</h1>
         <p className="intro-text">
           Find your perfect team match at Nobel! Take this quick assessment to discover
