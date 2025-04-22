@@ -1,0 +1,80 @@
+.app-container {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.app-container.dark {
+  background-color: #1D2A35;
+  color: #8CA6C0;
+}
+
+.app-container.light {
+  background-color: #8CA6C0;
+  color: #1D2A35;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.dark .theme-toggle {
+  background-color: #1D2A35;
+  color: #ffffff;
+}
+
+.light .theme-toggle {
+  background-color: #ffffff;
+  color: #1D2A35;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+  }
+}
